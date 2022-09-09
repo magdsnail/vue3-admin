@@ -1,7 +1,7 @@
 import { removeCookie, setCookie } from "@/utils"
 
 import { ElMessage } from "element-plus"
-import { Stores } from "types/stores"
+import { Stores } from "@/types/stores"
 import { defineStore } from "pinia"
 import request from "@/utils/request"
 

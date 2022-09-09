@@ -1,9 +1,17 @@
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import autoprefixer from 'autoprefixer'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { defineConfig } from 'vite'
+import flexbugsFixes from 'postcss-flexbugs-fixes'
+import postcssNesting from 'postcss-nesting'
 import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [
     vue(),
     vueJsx(),
@@ -17,6 +25,25 @@ export default defineConfig({
       ]
     })
   ],
+  css: {
+    postcss: {
+      plugins: [
+        postcssNesting,
+        autoprefixer({
+          overrideBrowserslist: [
+            'Android 4.1',
+            'iOS 7.1',
+            'Chrome > 31',
+            'ff > 31',
+            'ie >= 8',
+            '> 1%',
+          ],
+          grid: true,
+        }),
+        flexbugsFixes
+      ]
+    }
+  },
   resolve: {
     // alias: [{
     //   find: '@',
@@ -38,4 +65,8 @@ export default defineConfig({
     }
   }
 })
+
+function resolvePath(src: string) {
+  return resolve(__dirname, src)
+}
 
