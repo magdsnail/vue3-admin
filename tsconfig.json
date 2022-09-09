@@ -12,21 +12,21 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "types": ["element-plus/global"]
+    "types": [
+      "element-plus/global"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@": [
+        "src"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "components.d.ts", "types/*.d.ts"],
   "references": [{
     "path": "./tsconfig.node.json"
-  }],
-  "paths": {
-    "@": [
-      "src"
-    ],
-    "@/*": [
-      "src/*"
-    ],
-    "@/utils/*": [
-      "src/utils/*"
-    ]
-  }
+  }]
 }
