@@ -14,11 +14,14 @@
     "skipLibCheck": true,
     "types": ["element-plus/global"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "components.d.ts", "types/*.d.ts"],
   "references": [{
     "path": "./tsconfig.node.json"
   }],
   "paths": {
+    "@": [
+      "src"
+    ],
     "@/*": [
       "src/*"
     ],

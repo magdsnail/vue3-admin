@@ -13,7 +13,7 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src')
     },
-    extensions: ['.ts', '.js', '.jsx', '.tsx', '.json', '.vue']
+    extensions: ['.ts', '.d.ts', '.js', '.jsx', '.tsx', '.json', '.vue']
   },
   server: {
     open: true,
