@@ -56,13 +56,13 @@ export default defineConfig({
   },
   server: {
     open: true,
-    proxy: {
-      '/api': {
-        target: '',
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, '')
-      }
-    }
+    // proxy: {
+    //   '/api': {
+    //     target: '',
+    //     changeOrigin: true,
+    //     rewrite: path => path.replace(/^\/api/, '')
+    //   }
+    // }
   }
 })
 

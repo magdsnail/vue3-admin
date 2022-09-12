@@ -60,7 +60,7 @@ provide('loading', loading)
             <!-- 
               vite的hmr和keepalive组件冲突会导致vite热更新后路由失效，
               https://github.com/vuejs/core/pull/5165
-              开发过程注释掉keepalive
+              开发过程注释掉 keepalive
             -->
             <!-- <KeepAlive :include="getKeepAlivePages"> -->
             <component :is="Component" :key="route.path" />
