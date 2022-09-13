@@ -6,7 +6,7 @@ import Scrollbar from '@/components/Scrollbar.vue'
 import MenuPanel from '@/components/MenuPanel.vue'
 import type { ComponentPublicInstance } from 'vue'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
-import type { Layout } from 'types/layout'
+import type { Layout } from '@/types/layout'
 import { ElMessageBox } from 'element-plus'
 
 const router = useRouter()

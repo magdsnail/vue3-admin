@@ -5,7 +5,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { defineConfig } from 'vite'
 import flexbugsFixes from 'postcss-flexbugs-fixes'
 import postcssNesting from 'postcss-nesting'
-import { resolve } from 'node:path'
+import { resolve } from 'pathe'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
@@ -55,7 +55,7 @@ export default defineConfig({
     extensions: ['.ts', '.d.ts', '.js', '.jsx', '.tsx', '.json', '.vue']
   },
   server: {
-    open: true,
+    open: false,
     // proxy: {
     //   '/api': {
     //     target: '',

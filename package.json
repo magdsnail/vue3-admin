@@ -13,6 +13,7 @@
     "element-plus": "^2.2.16",
     "nprogress": "^0.2.0",
     "overlayscrollbars": "^1.13.3",
+    "pathe": "^0.3.7",
     "pinia": "^2.0.22",
     "qs": "^6.11.0",
     "vue": "^3.2.37",

@@ -20,7 +20,7 @@ function refreshBreadCrumb() {
   routeMatched.value = route.matched.filter((item) => item.meta.breadcrumb !== false && !item.meta.hidden)
   if (routeMatched.value.length === 0) return
   if (routeMatched.value[0].path !== '/dashboard') {
-    routeMatched.value.unshift(<RouteLocationMatched>{ ...dashboardRoute.children?.[0], path: resolve('/', dashboardRoute.children?.[0].path as string) })
+    routeMatched.value.unshift({ ...dashboardRoute.children?.[0], path: resolve('/', dashboardRoute.children?.[0].path as string) } as any)
   }
 }
 </script>

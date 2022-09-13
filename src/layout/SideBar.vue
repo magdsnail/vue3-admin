@@ -12,7 +12,7 @@ import type { Component, Slots } from 'vue'
 import type { RouteMeta, RouteRecordRaw } from 'vue-router'
 import { ElMenu, ElMenuItem, ElSubMenu, ElIcon } from 'element-plus/es'
 import SvgIcon from '../components/SvgIcon.vue'
-import type { Layout } from 'types/layout'
+import type { Layout } from '@/types/layout'
 
 const router = useRouter()
 const route = useRoute()
