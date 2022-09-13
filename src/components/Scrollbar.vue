@@ -20,7 +20,7 @@
     flex: 1,
     speed: 1
   })
-  
+
   const scrollbar = ref<OverlayScrollbars>()
   const scrollbarDom = ref<Element>(document.createElement(props.tag))
   
@@ -100,3 +100,4 @@
     }
   }
   </style>
+  
