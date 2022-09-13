@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import { onBeforeUnmount, onMounted, ref } from 'vue'
   import 'overlayscrollbars/css/OverlayScrollbars.css'
-  import { Options, OverlayScrollbars } from 'overlayscrollbars'
+  import OverlayScrollbars from 'overlayscrollbars'
+  import type { Options } from 'overlayscrollbars'
   
   const props = withDefaults(defineProps<{
     width?: string | number
@@ -20,7 +21,7 @@
     flex: 1,
     speed: 1
   })
-
+  
   const scrollbar = ref<OverlayScrollbars>()
   const scrollbarDom = ref<Element>(document.createElement(props.tag))
   
@@ -100,4 +101,3 @@
     }
   }
   </style>
-  

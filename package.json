@@ -12,7 +12,7 @@
     "axios": "^0.27.2",
     "element-plus": "^2.2.16",
     "nprogress": "^0.2.0",
-    "overlayscrollbars": "^2.0.0-beta.1",
+    "overlayscrollbars": "^1.13.3",
     "pinia": "^2.0.22",
     "qs": "^6.11.0",
     "vue": "^3.2.37",
