@@ -26,6 +26,7 @@
     "@vitejs/plugin-vue": "^3.1.0",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "autoprefixer": "^10.4.8",
+    "mockjs": "^1.1.0",
     "postcss": "^8.4.16",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-nesting": "^10.1.10",
